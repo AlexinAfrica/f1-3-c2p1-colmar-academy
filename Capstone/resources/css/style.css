@@ -1,0 +1,619 @@
+html {
+  font-family: 'Roboto', sans-seriff;
+  font-size: 16px;
+  background-color: white;
+  color: #4a4a4a;
+  letter-spacing: 0.3px;
+}
+
+/* Body */
+
+body {
+  line-height: normal;
+
+}
+
+a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: white;
+
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+
+}
+
+/* Header */
+header {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 4rem;
+  padding: 1rem 1.5rem;
+  z-index: 1;
+
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.logo img {
+  align-items: center;
+  height: 100%;
+
+}
+
+header .desktop {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 480px) {
+
+  header {
+    padding: 0;
+    display: block;
+  }
+
+
+  header .desktop, .logo {
+    display: none
+  }
+
+  .header-container {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header .mobile {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    padding: 0;
+  }
+
+}
+
+@media only screen and (min-width: 480px) {
+  header .mobile {
+  display: none;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+}
+
+nav ul li {
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+nav ul li:hover {
+  background-color: #37b6ee;
+  color: white;
+  border-radius: 15px;
+}
+
+/* Main Content Box */
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  background-color: #d8d8d8;
+  height: 40rem;
+}
+
+.main-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30%;
+  padding-right: 3rem;
+}
+
+.main-copy h1 {
+  padding: 1rem 0 0.5rem 0;
+}
+
+.main-copy h3 {
+  padding: 1.5em 0;
+}
+
+.main-button {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+.main-button:hover {
+  color: black;
+  border-radius: 15px;
+}
+
+.main-content img {
+  max-width: 60%;
+  height: auto;
+  overflow: hidden;
+  padding: 2rem 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .main-content img {
+    max-width: 100%;
+    padding: 0;
+    height: auto;
+  }
+
+  .main-image {
+    padding: 0;
+  }
+
+  .main-copy {
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .main-copy h1 {
+    padding-bottom: 2rem;
+  }
+
+  .main-copy h3 {
+    padding: 0 0 1.5rem 0;
+    max-width: 100%;
+  }
+
+  .main-button {
+    background-color: #9b9b9b;
+    max-width: 100%;
+  }
+
+}
+
+
+/* Second content section */
+
+.second-content {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 1.5rem;
+
+}
+
+.second-main {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.second-main img {
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+}
+
+.second-copy {
+  padding: 2rem 1.5rem;
+
+}
+
+.second-copy h1 {
+  padding-bottom: 1.5rem;
+}
+
+.second-copy span {
+  font-weight: 400;
+}
+
+.info-main {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  border-left: 0.3px solid #e0e2e2;
+  border-top: 0.3px solid #e0e2e2;
+  border-right: 0.3px solid #e0e2e2;
+
+}
+
+.info-container a {
+  color: #4a90e2;
+}
+
+.info-container a:hover {
+  color: #ff5500;
+}
+
+.info-image {
+  padding-left: 1rem;
+  height: auto;
+}
+
+.info-image img {
+  height: auto;
+  overflow: hidden;
+}
+
+/* Info container desktop responsive */
+
+@media only screen and (min-width: 480px) {
+
+  .info-mobile {
+    display: none;
+  }
+
+  .info-container img {
+  padding: 1rem;
+  height: auto;
+  max-width: 35%;
+
+  }
+}
+
+  .info-container:last-child {
+  background-color: #d8d8d8;
+
+}
+
+  .info-copy {
+  display: flex;
+  max-width: 65%;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+
+
+/* Info container mobile responsive */
+
+@media only screen and (max-width: 480px) {
+  .second-content {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: #f3f5f5;
+    border-bottom: 0.3px solid #e0e2e2;
+  }
+
+  .second-main {
+    display: none;
+  }
+
+  .info-main {
+    max-width: 100%;
+    border: 0;
+  }
+
+  .info-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 0;
+    align-items: flex-start;
+
+  }
+
+  .info-container img {
+    width: 100%;
+    height: 10rem;
+    padding: 0;
+  }
+
+  .info-container:last-child {
+    background-color: #f3f5f5
+  }
+
+  .info-copy {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .info-mobile {
+    display: block;
+  }
+
+
+  .info-mobile {
+    padding-left: 1rem;
+    height: auto;
+  }
+
+  .info-mobile img {
+    height: auto;
+    overflow: hidden;
+  }
+
+  .info-image{
+    display: none;
+  }
+
+
+}
+
+/* Learning Section */
+
+.learning-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f5f5;
+  padding: 2rem 2.5rem 0rem 2.5rem;
+
+}
+
+.learning-header {
+  text-align: center;
+}
+
+.learning-courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.learning-module {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 30%;
+  margin-top: 2rem;
+  height: auto;
+
+}
+
+.learning-module:hover {
+  border: 1px solid #4a4a4a;
+
+}
+
+.learning-module img {
+  overflow: hidden;
+  height: auto;
+  max-width: 100%;
+}
+
+.learning-copy {
+  background-color: white;
+  padding: 1rem 1rem 1.5rem 1rem;
+  align-items: center;
+  text-align: left;
+
+}
+
+
+.learning-copy span, p {
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 480px) {
+  .learning-container {
+    margin-top: 1px solid #e0e2e2;
+    border-bottom: 1px solid #e0e2e2;
+    padding-bottom: 2rem;
+  }
+
+  .learning-container br {
+    display: none;
+  }
+
+  .learning-courses {
+    flex-direction: column;
+  }
+
+  .learning-courses img, .learning-courses span, .learning-courses p {
+    display: none;
+  }
+
+  .learning-module {
+    max-width: 100%;
+    margin-top: 0.5rem;
+
+    background-color: #f3f5f5;
+
+  }
+
+  .learning-header {
+    padding-bottom: 1rem;
+  }
+
+  .learning-copy {
+    background-color: #d8d8d8;
+    padding: 1rem 1.5rem;
+  }
+
+}
+
+
+/* Thesis Section */
+
+.thesis-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f5f5;
+  height: auto;
+}
+
+.thesis-main {
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.thesis-sub {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
+}
+
+.thesis-video {
+  padding: 0 1.5rem;
+  max-width: 60%;
+
+}
+
+.thesis-video video {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 1.5rem;
+
+}
+
+.video-copy h4 {
+  padding-bottom: 0.5rem;
+}
+
+.thesis-side-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 70%;
+  min-height: 25rem;
+
+}
+
+.thesis-side {
+  display: flex;
+
+}
+
+.thesis-side img {
+  max-width: 35%;
+  padding: 1rem;
+  height: auto;
+  overflow: hidden;
+}
+
+.thesis-side:first-child {
+  background-color: #d8d8d8;
+}
+
+.thesis-copy {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  justify-content: center;
+  max-width: 65%;
+  flex-wrap: wrap;
+
+}
+
+@media only screen and (max-width: 480px) {
+  .thesis-container {
+    padding-bottom: 1.5rem;
+    height: auto;
+  }
+
+  .thesis-sub {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .video-copy {
+    display: none;
+  }
+
+  .thesis-side {
+    display: none;
+  }
+
+  .thesis-video {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .thesis-side-container  {
+    display: none;
+  }
+
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid  #e0e2e2;
+  background-color: #f3f5f5;
+
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer li {
+  padding-left: 1rem;
+}
+
+footer li a:hover {
+  color: #37b6ee;
+}
+
+@media only screen and (max-width: 480px) {
+  footer ul {
+    display: none;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+
+  }
+
+}
